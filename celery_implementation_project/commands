@@ -1,0 +1,4 @@
+source venv/bin/activate
+celery -A celery_implementation_project worker -Q celery -l info
+python manage.py runserver
+celery flower
